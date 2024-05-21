@@ -11,17 +11,41 @@ interface studentdetails{
     pincode: number;
 
  }
-     let adress: native={
+     let adressname: native={
      city:"karimnagar",
      state:"Telangana",
      pincode: 505526,
   }
-    let student: studentdetails={
+    let student1: studentdetails={
         name:"keerthana",
         age:18,
         email :"keerthanadurgamm@gmail.com",
-        adress: adress,
+        adress: adressname,
         course: "Javascript",
     }
-   console.log(student);
-     
+   console.log(student1);
+   type studentaddress={
+    city: string;
+    state: string;
+    pincode: number;}
+
+   type newstudent= {
+       name: string;
+       age: number;
+       email: string;
+       adress: studentaddress;
+   }   
+   
+      const address: studentaddress={
+        city: "jagitial",
+        state: "telanga",
+        pincode: 505526,
+      }
+     const student2: newstudent={
+        name: "sreeja",
+        age: 21,
+        email: "sreejaamuda@gmail.com",
+        adress: address,
+
+     }
+     console.log(student2);
