@@ -49,3 +49,4 @@ interface studentdetails{
 
      }
      console.log(student2);
+
