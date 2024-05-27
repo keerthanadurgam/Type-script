@@ -1,3 +1,4 @@
- export function GetItem<U>(name:U): U{
+
+export function GetItem<U>(name:U): U{
     return name;
 }
